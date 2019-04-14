@@ -15,6 +15,7 @@ type Flags struct {
 	ClearScreen *bool
 	Spinach     *string
 	Sections    *[]string
+	Format      *string
 }
 
 // NewFlags returns new configuration flags.
@@ -26,6 +27,7 @@ func NewFlags() *Flags {
 		ClearScreen: &enable,
 		Jurassic:    &enable,
 		Spinach:     &blank,
+		Format:      &blank,
 		Sections:    &[]string{},
 		ConfigFlags: genericclioptions.NewConfigFlags(false)}
 }

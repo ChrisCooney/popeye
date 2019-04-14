@@ -100,6 +100,13 @@ func initFlags() {
 		"Specifies which resources to include in the scan ie -s po,svc",
 	)
 
+	rootCmd.Flags().StringVarP(
+		flags.Format,
+		"output", "o",
+		"",
+		"The format to output the report in",
+	)
+
 	rootCmd.Flags().StringVar(
 		flags.KubeConfig,
 		"kubeconfig",
